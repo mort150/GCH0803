@@ -70,12 +70,12 @@
         <hr>
         <br><br>
         <form action="/update" method="post">
-            <input type="hidden" name="id" value="{{student._id}}">
-            <input type="text" name="txtName" placeholder="Input Name" value="{{student.name}}">
+            <input type="hidden" name="id" value="{{product._id}}">
+            <input type="text" name="txtName" placeholder="Input Name" value="{{product.name}}">
             <br><br>
-            <input type="text" name="txtTuoi" placeholder="Input Age" value="{{student.tuoi}}">
+            <input type="text" name="txtPrice" placeholder="Input Price" value="{{product.tuoi}}">
             <br><br>
-            <input type="text" name="picture" placeholder="Input Image'Url" value="{{student.picture}}">
+            <input type="text" name="picture" placeholder="Input Image'Url" value="{{product.picture}}">
             <br><br>
             <button type="submit">Update</button>
         </form>

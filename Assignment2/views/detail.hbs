@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit page</title>
+    <title>Product's detail</title>
 </head>
 <style>
     * {
@@ -45,7 +45,7 @@
 
     button {
         background: green;
-        font-size: 15px;
+        font-size: 20px;
         padding: 10px;
     }
 
@@ -53,11 +53,10 @@
         border: green;
     }
 </style>
-
 <body>
     <center>
         <div>
-            <h1>Welcome to Update page</h1>
+            <h1>Welcome to Insert page</h1>
             <img src="https://www.matbao.net/Content/images/LandingPage/LandingPageStore/dot_store.png" width="200"
                 height="100">
         </div>
@@ -69,15 +68,14 @@
         </div>
         <hr>
         <br><br>
-        <form action="/update" method="post">
-            <input type="hidden" name="id" value="{{student._id}}">
-            <input type="text" name="txtName" placeholder="Input Name" value="{{student.name}}">
+        <form action="/insert" method="post">
+            <input type="text" name="txtName" placeholder="Input Name">
             <br><br>
-            <input type="text" name="txtTuoi" placeholder="Input Age" value="{{student.tuoi}}">
+            <input type="text" name="txtPrice" placeholder="Input Price">
             <br><br>
-            <input type="text" name="picture" placeholder="Input Image'Url" value="{{student.picture}}">
+            <input type="text" name="picture" placeholder="Input Image'Url">
             <br><br>
-            <button type="submit">Update</button>
+            <button type="submit">Insert</button>
         </form>
     </center>
 </body>

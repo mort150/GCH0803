@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edit page</title>
+    <title>Search page</title>
 </head>
 <style>
     * {
@@ -24,12 +24,12 @@
     }
 
     #menu ul li {
-        display: inline-table;
-        padding: 30px;
+        display: inline-block;
+        padding: 20px;
         font-size: 30px;
         width: 100px;
         height: 40px;
-        line-height: 40px;
+        line-height: 30px;
     }
 
     #menu ul li a {
@@ -64,20 +64,15 @@
         <div id="menu">
             <ul>
                 <li><a href="/home">Home</a></li>
-                <li><a href="/search">Search product</a></li>
+                <li><a href="/add">Add product</a></li>
             </ul>
         </div>
         <hr>
         <br><br>
-        <form action="/update" method="post">
-            <input type="hidden" name="id" value="{{student._id}}">
-            <input type="text" name="txtName" placeholder="Input Name" value="{{student.name}}">
+        <form action="/search" method="post">
+            <input type="text" name="txtSearch" placeholder="Name Input">
             <br><br>
-            <input type="text" name="txtTuoi" placeholder="Input Age" value="{{student.tuoi}}">
-            <br><br>
-            <input type="text" name="picture" placeholder="Input Image'Url" value="{{student.picture}}">
-            <br><br>
-            <button type="submit">Update</button>
+            <button type="submit">Search</button>
         </form>
     </center>
 </body>
